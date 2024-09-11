@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+    float L,P,Q,Pl,Pp,Pq,S,Sc,Pt;
+
+        std::cout<<"Insert long planks"<<endl;
+            std::cin>>L;
+        std::cout<<"Insert small planks"<<endl;
+            std::cin>>P;
+        std::cout<<"Insert boxs"<<endl;
+            std:cin>>Q;
+        std::cout<<"Insert long planks price"<<endl;
+            std::cin>>Pl;
+        std::cout<<"Insert small planks price"<<endl;
+            std::cin>>Pp;
+        std::cout<<"Insert boxs price"<<endl;
+            std::cin>>Pq;
+                S = (L * Pl) + (P * Pp) + (Q * Pq);
+        std::cout<<"Total price is \n"<<S<<endl;    
+                Sc = S - (S * 10 / 100);
+        std::cout<<"There's a 10% discount, so the expense is \n"<<Sc<<endl;
+                Pt = Sc + 30;
+        std::cout<<"There are also 30 euros for shipping, so the total price is' \n"<<Pt;
+        return 0;
+}
